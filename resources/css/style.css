@@ -1,3 +1,100 @@
 * {
     border: 1px solid red;
 }
+
+/* Universal Styles */
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Flexbox Settings */
+
+.flex,
+.flex-row-center,
+.flex-column-start {
+    display: flex;
+}
+
+.flex-row-center {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.flex-row-sa {
+    justify-content: space-around;
+}
+
+.flex-column-start {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+
+/* Header */
+
+header.menu {
+    height: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.logo {
+    height: 2rem;
+}
+
+nav {
+    justify-content: end;
+    align-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding: 0 1rem;
+}
+
+/* Banner */
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner {
+    background-color: lightgray;
+}
+
+.banner-sx {
+    max-width: 60%;
+    height: auto;
+    flex-grow: 3;
+    margin: 2rem 1.5rem;
+}
+
+.banner-dx {
+    max-width: 40%;
+    height: auto;
+    flex-grow: 2;
+}
+
+.banner-dx header {
+    max-width: 70%;
+}
+
+.banner-dx-btn {
+    min-width: 70%;
+}
+
+.banner-dx-btn button {
+    width: 100%;
+    padding: 8px 0;
+}
