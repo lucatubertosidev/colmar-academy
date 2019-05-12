@@ -107,15 +107,24 @@ nav ul li {
 
 /* Blog posts */
 
+.blog {
+  background-color: white;
+}
+
 .post-sx {
   max-width: 60%;
   height: 100%;
   padding: 2rem 1.5rem;
 }
 
+.post-sx p {
+  margin:
+}
+
 .post-dx {
   max-width: 40%;
   height: 100%;
+  padding: 2rem 1.5rem 2rem 0;
 }
 
 .post-dx img {
@@ -123,6 +132,27 @@ nav ul li {
   height: auto%;
 }
 
+.post-dx p {
+  margin: 0.5rem;
+}
+
+.post-dx h3 {
+  margin: 0.5rem 0.5rem 0;
+}
+
 .left-img {
   max-width: 35%;
+  padding: 1rem;
+}
+
+.author {
+  margin: 2rem 0 0;
+}
+
+.paragraph {
+  margin: 1.5rem 0 0;
+}
+
+.post-sx h2 {
+  margin: 2rem 0 0;
 }
