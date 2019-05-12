@@ -9,11 +9,15 @@ body {
     margin: auto;
 }
 
+.scalable {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 /* Flexbox Settings */
 
-.flex,
-.flex-row-center,
-.flex-column-start {
+.flex {
     display: flex;
 }
 
@@ -40,6 +44,7 @@ header.menu {
     height: 4rem;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1.5rem;
 }
 
 div.logo {
@@ -67,6 +72,7 @@ nav ul li {
 .banner-img {
     max-width: 100%;
     height: auto;
+    vertical-align: middle;
 }
 
 .banner {
@@ -75,7 +81,7 @@ nav ul li {
 
 .banner-sx {
     max-width: 60%;
-    height: auto;
+    height: 100%;
     flex-grow: 3;
     margin: 2rem 1.5rem;
 }
@@ -97,4 +103,26 @@ nav ul li {
 .banner-dx-btn button {
     width: 100%;
     padding: 8px 0;
+}
+
+/* Blog posts */
+
+.post-sx {
+  max-width: 60%;
+  height: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.post-dx {
+  max-width: 40%;
+  height: 100%;
+}
+
+.post-dx img {
+  max-width: 100%;
+  height: auto%;
+}
+
+.left-img {
+  max-width: 35%;
 }
