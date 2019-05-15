@@ -186,7 +186,8 @@ section.courses {
   flex: 2 1 30%;
 }
 
-.single-course h3, p {
+.single-course h3,
+.single-course p {
   margin: 1rem;
 }
 
@@ -197,4 +198,67 @@ section.courses {
 
 p.courses-categories {
   margin-bottom: 1.5rem;
+}
+
+/* Thesis Section */
+
+section.thesis {
+  padding: 2rem 0;
+}
+
+.thesis-sx {
+  max-width: 60%;
+  height: auto;
+  margin: 0 1.5rem;
+}
+
+.thesis-sx p {
+  margin-top: 0.5rem;
+}
+
+.thesis-dx {
+  max-width: 40%;
+  height: auto;
+}
+
+.thesis-dx-img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.thesis-dx-description {
+  width: 65%;
+  height: auto;
+}
+
+.thesis-dx h3 {
+  margin: 0;
+}
+
+.thesis-dx p {
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  border-top: 1px solid lightgrey;
+}
+
+footer p {
+  margin: 1rem 1.5rem;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 0 0.5rem;
 }
