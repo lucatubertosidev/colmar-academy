@@ -2,6 +2,7 @@
 <html lang="en">
 
 <!-- Head -->
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
 </head>
 
 <!-- Body -->
+
 <body>
   <!-- Main Header -->
   <header class="flex menu">
@@ -37,162 +39,174 @@
   </header>
   <!-- Page Content -->
   <main>
-      <section class="banner flex flex-row-sa">
-        <div class="banner-sx">
-          <img class="scalable" src="resources/images/banner.jpg" alt="Girl studying" />
-        </div>
-        <div class="banner-dx flex flex-column-start">
-          <header class="flex flex-column-start">
-            <h1>Learn something new everyday</h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-          </header>
-          <div class="banner-dx-btn">
-            <button>Start here</button>
+    <!-- Banner -->
+    <section class="flex flex-row-sa grey-background">
+      <div class="banner-sx">
+        <img class="scalable" src="resources/images/banner.jpg" alt="Girl studying" />
+      </div>
+      <div class="banner-dx flex flex-column-start">
+        <header class="flex flex-column-start">
+          <h1>Learn something new everyday</h1>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+        </header>
+        <button>Start here</button>
+      </div>
+    </section>
+    <!-- Blog Posts -->
+    <section class="blog flex">
+      <article class="post-sx">
+        <img class="scalable" src="resources\images\information-main.jpg" alt="Man reading a book" />
+        <h2>It doesn't hurt to keep practicing</h2>
+        <p class="paragraph">
+          "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+          nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
+          eget magna laoreet, efficitur dolor consequat, tristique ligula."
+        </p>
+        <p class="author">
+          Emanuel, Sr Strategist at Hiring.com
+        </p>
+      </article>
+      <section class="post-dx flex flex-column-start">
+        <article class="flex flex-row-center">
+          <div class="left-img">
+            <img class="scalable desktop" src="resources\images\information-orientation.jpg" alt="People walking" />
+            <img class="scalable mobile" src="resources/images/information-orientation-mobile.jpg"
+              alt="People walking" />
           </div>
-        </div>
+          <div class="left-description">
+            <h3>Orientation date</h3>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <p><a href="#">Read more</a></p>
+          </div>
+        </article>
+        <article class="flex flex-row-center second">
+          <div class="left-img">
+            <img class="scalable desktop" src="resources\images\information-campus.jpg" />
+            <img class="scalable mobile" src="resources\images\information-campus-mobile.jpg" />
+          </div>
+          <div class="left-description">
+            <h3>Our campus</h3>
+            <p>Find which campus is close by you</p>
+            <p><a href="#">Read more</a></p>
+          </div>
+        </article>
+        <article class="flex flex-row-center grey-background">
+          <div class="left-img">
+            <img class="scalable desktop" src="resources\images\information-guest-lecture.jpg" />
+            <img class="scalable mobile" src="resources\images\information-guest-lecture-mobile.jpg" />
+          </div>
+          <div class="left-description">
+            <h3>Our guest lecture</h3>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <p><a href="#">Read more</a></p>
+          </div>
+        </article>
       </section>
-      <section class="blog flex">
-        <article class="post-sx">
-          <img class="scalable" src="resources\images\information-main.jpg" alt="Man reading a book" />
-          <h2>It doesn't hurt to keep practicing</h2>
-          <p class="paragraph">
-            "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
-            nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
-            eget magna laoreet, efficitur dolor consequat, tristique ligula."
+    </section>
+    <!-- Courses Section -->
+    <section class="courses flex flex-column-center lightgrey-background">
+      <header>
+        <h2>Start learning</h2>
+      </header>
+      <div class="courses flex flex-row-stretch">
+        <article class="single-course">
+          <img class="scalable" src="resources/images/course-software.jpg" alt="Apple iMac PCs" />
+          <h3>Software engineering</h3>
+          <p>COURSES</p>
+          <p class="courses-categories">Web Development, Mobile, Development, iOT, APIs</p>
+        </article>
+        <article class="single-course">
+          <img class="scalable" src="resources/images/course-computer-art.jpg" alt="Person using smartphone" />
+          <h3>Computer art</h3>
+          <p>COURSES</p>
+          <p class="courses-categories">Imaging & Design, Web Design, Motion Graphiscs & Visual Effects, Computer
+            Animation</p>
+        </article>
+        <article class="single-course">
+          <img class="scalable" src="resources/images/course-design.jpg" alt="Person adjusting camera" />
+          <h3>Design</h3>
+          <p>COURSES</p>
+          <p class="courses-categories">User Experience Design, User Research, Visual Design</p>
+        </article>
+        <article class="single-course">
+          <img class="scalable" src="resources/images/course-data.jpg" alt="Person adjusting camera" />
+          <h3>Data</h3>
+          <p>COURSES</p>
+          <p class="courses-categories">Data Science, Big Data, SQL, Data Visualization</p>
+        </article>
+        <article class="single-course">
+          <img class="scalable" src="resources/images/course-business.jpg" alt="Person adjusting camera" />
+          <h3>Business</h3>
+          <p>COURSES</p>
+          <p class="courses-categories">Product Development, Business Development, Startup</p>
+        </article>
+        <article class="single-course">
+          <img class="scalable" src="resources/images/course-marketing.jpg" alt="Person adjusting camera" />
+          <h3>Marketing</h3>
+          <p>COURSES</p>
+          <p class="courses-categories">Analytics, Content Marketing, Mobile Marketing</p>
+        </article>
+      </div>
+      <div class="courses-mobile">
+        <h3>Software engineering</h3>
+        <h3>Computer art</h3>
+        <h3>Design</h3>
+        <h3>Data</h3>
+        <h3>Business</h3>
+        <h3>Marketing</h3>
+      </div>
+    </section>
+    <!-- Thesis Section -->
+    <section class="thesis flex flex-column-center">
+      <header>
+        <h2>Thesis exhibit</h2>
+      </header>
+      <div class="thesis flex">
+        <article class="thesis-sx flex-column-start">
+          <video width="100%" height="auto" controls>
+            <source src="resources\videos\thesis.mp4" type="video/mp4">
+          </video>
+          <h3>Reimagine urban</h3>
+          <p>
+            "Curabitur vitae lbero in ipsum porttitor consequat. Aliquam et commodo lectus, nec
+            consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget
+            magna laoreet, efficitur dolor consequat, tristique ligula."
           </p>
-          <p class="author">
-            Emanuel, Sr Strategist at Hiring.com
+          <p>
+            © 2016 Colmar Academy. All rights reserved
           </p>
         </article>
-        <section class="post-dx flex flex-column-start">
-          <article class="flex flex-row-center">
-            <div class="left-img">
-              <img class="scalable" src="resources\images\information-orientation.jpg" alt="People walking" />
+        <section class="thesis-dx flex-column-start">
+          <article class="flex flex-row-center grey-background">
+            <div class="thesis-dx-img">
+              <img class="scalable" src="resources\images\thesis-fisma.jpg" alt="Girl writing" />
             </div>
-            <div>
-              <h3>Orientation date</h3>
-              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <p><a href="#">Read more</a></p>
-            </div>
-          </article>
-          <article class="flex flex-row-center">
-            <div class="left-img">
-              <img class="scalable" src="resources\images\information-campus.jpg" />
-            </div>
-            <div>
-              <h3>Our campus</h3>
-              <p>Find which campus is close by you</p>
-              <p><a href="#">Read more</a></p>
+            <div class="thesis-dx-description">
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
             </div>
           </article>
           <article class="flex flex-row-center">
-            <div class="left-img">
-              <img class="scalable" src="resources\images\information-guest-lecture.jpg" />
+            <div class="thesis-dx-img">
+              <img class="scalable" src="resources\images\thesis-now-and-then.jpg" alt="New York" />
             </div>
-            <div>
-              <h3>Our guest lecture</h3>
-              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-              <p><a href="#">Read more</a></p>
+            <div class="thesis-dx-description">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
             </div>
           </article>
         </section>
       </section>
-      <!-- Courses Section -->
-      <section class="courses flex flex-column-center">
-        <header>
-          <h2>Start learning</h2>
-        </header>
-        <div class="flex flex-row-stretch">
-          <article class="single-course">
-            <img class="scalable" src="resources/images/course-software.jpg" alt="Apple iMac PCs" />
-            <h3>Software engineering</h3>
-            <p>COURSES</p>
-            <p class="courses-categories">Web Development, Mobile, Development, iOT, APIs</p>
-          </article>
-          <article class="single-course">
-            <img class="scalable" src="resources/images/course-computer-art.jpg" alt="Person using smartphone" />
-            <h3>Computer art</h3>
-            <p>COURSES</p>
-            <p class="courses-categories">Imaging & Design, Web Design, Motion Graphiscs & Visual Effects, Computer
-              Animation</p>
-          </article>
-          <article class="single-course">
-            <img class="scalable" src="resources/images/course-design.jpg" alt="Person adjusting camera" />
-            <h3>Design</h3>
-            <p>COURSES</p>
-            <p class="courses-categories">User Experience Design, User Research, Visual Design</p>
-          </article>
-          <article class="single-course">
-            <img class="scalable" src="resources/images/course-data.jpg" alt="Person adjusting camera" />
-            <h3>Data</h3>
-            <p>COURSES</p>
-            <p class="courses-categories">Data Science, Big Data, SQL, Data Visualization</p>
-          </article>
-          <article class="single-course">
-            <img class="scalable" src="resources/images/course-business.jpg" alt="Person adjusting camera" />
-            <h3>Business</h3>
-            <p>COURSES</p>
-            <p class="courses-categories">Product Development, Business Development, Startup</p>
-          </article>
-          <article class="single-course">
-            <img class="scalable" src="resources/images/course-marketing.jpg" alt="Person adjusting camera" />
-            <h3>Marketing</h3>
-            <p>COURSES</p>
-            <p class="courses-categories">Analytics, Content Marketing, Mobile Marketing</p>
-          </article>
-        </div>
-      </section>
-      <!-- Thesis Section -->
-      <section class="thesis flex flex-column-center">
-        <header>
-          <h2>Thesis exhibit</h2>
-        </header>
-        <section class="thesis flex">
-          <article class="thesis-sx flex-column-start">
-            <video width="100%" height="auto" controls>
-              <source src="resources\videos\thesis.mp4" type="video/mp4">
-            </video>
-            <h3>Reimagine urban</h3>
-            <p>
-              "Curabitur vitae lbero in ipsum porttitor consequat. Aliquam et commodo lectus, nec
-              consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget
-              magna laoreet, efficitur dolor consequat, tristique ligula."
-            </p>
-            <p>
-              © 2016 Colmar Academy. All rights reserved
-            </p>
-          </article>
-          <section class="thesis-dx flex-column-start">
-            <article class="flex flex-row-center">
-              <div class="thesis-dx-img">
-                <img class="scalable" src="resources\images\thesis-fisma.jpg" alt="Girl writing" />
-              </div>
-              <div class="thesis-dx-description">
-                <h3>Fisma: Design and Prototype</h3>
-                <p>Designer showcase of new prototype product</p>
-              </div>
-            </article>
-            <article class="flex flex-row-center">
-              <div class="thesis-dx-img">
-                <img class="scalable" src="resources\images\thesis-now-and-then.jpg" alt="New York" />
-              </div>
-              <div class="thesis-dx-description">
-                <h3>Now and then</h3>
-                <p>Research study about New York</p>
-              </div>
-            </article>
-          </section>
-        </section>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-      <p>© 2016 Colmar Academy. All rights reserved</p>
-      <ul class="flex">
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
-      </ul>
-    </footer>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>© 2016 Colmar Academy. All rights reserved</p>
+    <ul class="flex">
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+  </footer>
 </body>
 
 </html>

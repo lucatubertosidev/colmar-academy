@@ -5,14 +5,22 @@
 /* Universal Styles */
 
 body {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .scalable {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+.grey-background {
+  background-color: lightgray;
+}
+
+.lightgrey-background {
+  background-color: gainsboro;
 }
 
 /* Flexbox Settings */
@@ -100,10 +108,6 @@ nav ul li {
     vertical-align: middle;
 }
 
-.banner {
-    background-color: lightgray;
-}
-
 .banner-sx {
     max-width: 60%;
     height: 100%;
@@ -122,13 +126,9 @@ nav ul li {
     max-width: 70%;
 }
 
-.banner-dx-btn {
-    min-width: 70%;
-}
-
-.banner-dx-btn button {
-    width: 100%;
-    padding: 8px 0;
+.banner-dx button {
+    width: 70%;
+    padding: 0.5rem 0;
 }
 
 /* Blog posts */
@@ -146,12 +146,16 @@ nav ul li {
 .post-dx {
   max-width: 40%;
   height: 100%;
-  padding: 2rem 1.5rem 2rem 0;
+  padding: 1rem 0;
 }
 
-.post-dx img {
+.left-img {
   max-width: 100%;
   height: auto;
+}
+
+.left-description {
+  width: 100%;
 }
 
 .post-dx p {
@@ -164,7 +168,7 @@ nav ul li {
 
 .left-img {
   max-width: 35%;
-  padding: 0 1rem 1rem;
+  padding: 1rem;
 }
 
 .author {
@@ -181,17 +185,29 @@ nav ul li {
 
 /* Courses Section */
 
-section.courses {
-  background-color: lightgray;
-}
-
 .courses header{
   margin-top: 2rem;
 }
 
-.courses div {
+.courses header h2 {
+  margin: 0;
+}
+
+div.courses {
   margin: 2rem 4rem;
   flex-wrap: wrap;
+}
+
+div.courses-mobile {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+div.courses-mobile h3 {
+  margin: 0 0 0.5rem;
+  padding: 1rem 1rem 1.5rem;
+  background-color: lightgrey;
 }
 
 .single-course {
@@ -219,6 +235,14 @@ p.courses-categories {
 
 section.thesis {
   padding: 2rem 0;
+}
+
+.thesis header {
+  margin-bottom: 2rem;
+}
+
+.thesis header h2 {
+  margin: 0;
 }
 
 .thesis-sx {
@@ -280,9 +304,20 @@ footer ul li {
 
 /* Responsive Settings */
 
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 480px) {
 
+  /* Flexbox */
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
   /* Mobile Menu */
+
   header.menu {
     display: none;
   }
@@ -291,8 +326,136 @@ footer ul li {
     display: block;
   }
 
+  /* Banner Section */
+
+  .banner-sx,
+  .banner-dx {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .banner-dx {
+    margin: 0 1rem;
+  }
+
+  .banner-dx header {
+    max-width: 100%;
+  }
+
+  .banner-dx h1 {
+    margin: 2rem 0;
+  }
+
+  .banner-dx h3 {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .banner-dx button {
+    width: 100%;
+    margin-bottom: 2rem;
+    color: white;
+    background-color: grey;
+  }
+
+  /* Blog Section */
+
+  .post-sx {
+    display: none;
+  }
+
+  .post-dx {
+    max-width: 100%;
+    padding: 0;
+    margin: 1rem 1rem 2rem;
+  }
+
+  .second {
+    margin: 4rem 0;
+  }
+
+  .left-img {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  img.desktop {
+    display: none;
+  }
+
+  img.mobile {
+    display: block;
+  }
+
+  .left-description {
+    margin: 0 1rem;
+  }
+
+  .left-description h3,
+  .left-description p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Courses Section */
+
+  section.courses {
+    background-color: white;
+    border-top: 1px solid lightgray;
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .courses header {
+    margin: 0 1rem;
+  }
+
+  div.courses {
+    display: none;
+  }
+
+  div.courses-mobile {
+    display: block;
+  }
+
+  /* Thesis Section */
+
+  section.thesis {
+    margin-bottom: 1.5rem;
+    border-top: 1px solid lightgrey;
+  }
+
+  .thesis header {
+    margin-bottom: 1rem;
+  }
+
+  div.thesis {
+    width: 100%;
+  }
+
+  .thesis-dx {
+    display: none;
+  }
+
+  .thesis-sx {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .thesis-sx h3,
+  .thesis-sx p {
+    display: none;
+  }
+
   /* Footer */
+
+  footer {
+    border: none;
+  }
+
   footer ul {
     display: none!important;
+  }
+
+  footer p {
+    margin: 1rem;
   }
 }
