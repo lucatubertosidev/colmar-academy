@@ -76,14 +76,21 @@ a:hover {
 /* Flexbox Settings */
 
 .flex {
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .flex-row-center,
 .flex-row-stretch {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+  -ms-flex-line-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .flex-row-stretch {
@@ -96,10 +103,10 @@ a:hover {
 
 .flex-column-start,
 .flex-column-center {
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
 }
 
 .flex-column-center {
@@ -109,14 +116,14 @@ a:hover {
 /* Header */
 
 header.menu {
-    height: 4rem;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5rem;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
 }
 
 div.logo {
-    height: 2rem;
+  height: 2rem;
 }
 
 .logo span {
@@ -125,15 +132,15 @@ div.logo {
 }
 
 nav {
-    justify-content: end;
-    align-content: center;
-    align-items: center;
+  justify-content: end;
+  align-content: center;
+  align-items: center;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  justify-content: flex-end;
 }
 
 .li-space {
@@ -163,20 +170,20 @@ nav ul {
 }
 
 .banner-sx {
-    width: 60%;
-    height: 100%;
-    flex-grow: 3;
-    margin: 2rem 1.5rem;
+  width: 60%;
+  height: 100%;
+  flex-grow: 3;
+  margin: 2rem 1.5rem;
 }
 
 .banner-dx {
-    width: 40%;
-    height: auto;
-    flex-grow: 2;
+  width: 40%;
+  height: auto;
+  flex-grow: 2;
 }
 
 .banner-dx header {
-    width: 100%;
+  width: 100%;
 }
 
 .banner-dx header h1,
@@ -185,9 +192,9 @@ nav ul {
 }
 
 .banner-dx button {
-    width: 90%;
-    padding: 0.5rem 0;
-    margin: 1rem;
+  width: 90%;
+  padding: 0.5rem 0;
+  margin: 1rem;
 }
 
 /* Blog posts */
@@ -298,6 +305,10 @@ section.thesis {
   width: 60%;
   height: auto;
   margin: 0 1.5rem;
+}
+
+.thesis-sx h3 {
+  margin-top: 1.5rem;
 }
 
 .thesis-sx p {
